@@ -287,4 +287,9 @@ section {
         color: white;
     }
 
+    .home2 {
+        max-width: 50vw;
+        max-height: 100vh;
+        position: relative;
+    }
 }
