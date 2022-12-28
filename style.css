@@ -282,4 +282,9 @@ section {
         flex-direction: column;
     }
 
+    .home1 h1 {
+        font-size: 25px;
+        color: white;
+    }
+
 }
