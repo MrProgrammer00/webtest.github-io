@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a .menu {
+    opacity: 0;
+    margin-left: -1000px;
+}
+
+nav div a img {
+    max-width: 90px;
+    max-height: 90px;
+}
+
+nav div label {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+header div ul {
+    display: flex;
+}
+
+header div ul li a {
+    margin: 0px 30px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-color: aqua;
+    }
+
+    header div ul li a {
+        margin: 0px 25px;
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-color: antiquewhite;
+    }
+
+    header {
+       position: fixed;
+        display: inline;
+        
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    
+    
+    header nav a .menu {
+        max-width: 70px;
+        max-height: 70px;
+        opacity: 1;
+        margin-left: 0px;
+    }
+    
+    header div ul {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        margin-left: -1000px;
+        align-items: center;
+        animation-name: menuClose;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes menuClose {
+        0% {opacity: 1;}
+        100% {opacity: 0;}
+        
+    }
+    
+    header div .menu {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        margin-left: 0;
+        align-items: center;
+        animation-name: menu;
+        animation-duration: 1.1s;
+
+        
+    }
+    
+    @keyframes menu {
+        0% {opacity: 0;}
+        25% {opacity: 0.3;}
+        75% {opacity: 0.8;}
+        100% {opacity: 1;}
+    }
+    header div ul li {
+        margin: 70px 0px;
+
+    }
+
+    header div ul li a {
+        font-size: 30px;
+    }
+
+
+       
+
+    
+
+   
+
+}
