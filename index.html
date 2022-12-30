@@ -14,22 +14,22 @@
 <body>
     <header>
         <nav>
-            <div>
+            <div onclick="Home()">
                 <a href="#"><img src="./images/ELeven Media-logos/ELeven Media-logos_black.png" alt=""></a>
                 <label for="">ELEVEN MEDIA</label>
 
             </div>
-            <a href="#" onclick="menuButton()"><img
+            <a href="#" onclick="menuButton()" class="menulink"><img
                     src="./images/icons8-menu-rounded-ios-16-filled/icons8-menu-rounded-100.png" alt=""
                     class="menu"></a>
         </nav>
 
         <div>
             <ul id="menu">
-                <li id="home"><a href="#">HOME</a></li>
-                <li id="about"><a href="#">ABOUT</a></li>
-                <li id="contact"><a href="#">CONTACT</a></li>
-                <li id="services"><a href="#">SERVICES</a></li>
+                <li id="home" onclick="Home()"><a href="#">HOME</a></li>
+                <li id="about" onclick="About()"><a href="#">ABOUT</a></li>
+                <li id="contact" onclick="Contact()"><a href="#">CONTACT</a></li>
+                <li id="services" onclick="Services()"><a href="#">SERVICES</a></li>
             </ul>
         </div>
     </header>
@@ -51,8 +51,14 @@
                 <div class="circle"></div>
             </div>
         </div>
-        <div class="about" id="About">
-
+        <div class="about hidden" id="About">
+            <h1>work under processes for about</h1>
+        </div>
+        <div class="contact hidden" id="Contact">
+            <h1>work under processes for contact</h1>
+        </div>
+        <div class="services hidden" id="Services">
+            <h1>work under processes for services</h1>
         </div>
     </section>
 

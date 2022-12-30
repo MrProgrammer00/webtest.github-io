@@ -4,7 +4,7 @@
     font-family: sans-serif;
     text-decoration: none;
     list-style: none;
-
+    border: 1px solid  red;
 }
 
 
@@ -22,6 +22,7 @@ header {
 nav div {
     display: flex;
     align-items: center;
+    padding: 1px;
 }
 
 header nav {
@@ -35,14 +36,22 @@ header nav a .menu {
     margin-left: -1000px;
 }
 
+nav div a {
+    padding: 1px;
+    align-items: center;
+    justify-content: center;
+    
+}
 nav div a img {
     max-width: 90px;
     max-height: 90px;
+    margin: 1px;
 }
 
 nav div label {
     font-size: 35px;
     font-weight: 600;
+    margin: 1px;
 }
 
 header div ul {
@@ -60,8 +69,8 @@ header div ul li a {
 
 section {
     width: 100vw;
-    height: 100vh;
-    position: relative;
+    max-height: 90vh;
+    position: absolute;
     z-index: -2;
     background-color: rgb(16, 14, 14);
     overflow: hidden;
@@ -73,10 +82,10 @@ section {
 
 .home {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     position: absolute;
-
+    
 
 }
 
@@ -85,8 +94,10 @@ section {
     align-items: center;
     justify-content: center;
     padding: 50px 40px;
-    margin-top: 100px;
-    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .home1 h1 {
@@ -94,15 +105,16 @@ section {
     color: white;
 }
 .home1 p{
-    color: aqua;
+    color: rgb(0, 255, 255);
     margin-top: 20px;
     font-size: 15px;
+    z-index: 1;
 }
 
 .home1 div {
     
     margin-top: 15px;
-    
+    margin-left: -450px;
 }
 
 .home1 div a {
@@ -113,8 +125,8 @@ section {
 }
 .home2 {
     max-width: 50vw;
-    max-height: 100vh;
-
+    max-height: 90vh;
+    position: relative;
 }
 
 .circle {
@@ -126,7 +138,7 @@ section {
     margin-left: 40%;
     background: #faf4f4;
     box-shadow: -26px -26px 51px #d5cfcf,
-        26px 26px 51px #ffffff;
+        26px 26px 51px #ffffffa4;
     opacity: 0.7;
 
 
@@ -134,7 +146,40 @@ section {
 
 .about {
 
-    position: absolute;
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.contact {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    margin-top: -90vh;
+}
+
+.services {
+
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    margin-top: -90vh;
 
 }
 
@@ -171,23 +216,32 @@ section {
     header {
         position: fixed;
         display: inline;
-
+        padding: 0;
+        
     }
 
     header nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        
     }
 
+    header nav .menulink {
+       width: 65px;
+       height: 65px;
+       margin: 20px;
+        padding: 2.5px;
+
+    }
 
     header nav a .menu {
         max-width: 60px;
         max-height: 60px;
         opacity: 1;
         margin-left: 0px;
-        margin-right: 40px;
+        justify-content: center;
+       align-self: center;
     }
 
     header nav div label {
@@ -232,7 +286,8 @@ section {
         animation-duration: 1.1s;
         position: absolute;
         z-index: 1;
-        background-color: rgba(15, 15, 15, 0.758);
+        background-color: rgba(15, 15, 15, 0.806);
+        
 
     }
 
@@ -260,8 +315,11 @@ section {
 
     }
 
+    header div ul {
+        opacity: 1;
+    }
     header div ul li {
-        margin: 70px 0px;
+        margin: 50px 0px;
 
     }
 
@@ -275,21 +333,38 @@ section {
 
     section {
         padding-top: 100px;
+        margin-top: 0;
         
     }
 
     .home {
+        display: flex;
         flex-direction: column;
+        
     }
 
+    .home1 {
+        margin-top: 10vh;
+        position: absolute;
+    }
     .home1 h1 {
         font-size: 25px;
         color: white;
     }
 
+    .home1 div {
+        margin-left: -85px;
+    }
     .home2 {
-        max-width: 50vw;
-        max-height: 100vh;
+        max-width: 100vw;
+        max-height: 90vh;
         position: relative;
+    }
+
+    .circle {
+        margin-top: 40%;
+        margin-left: 40%;
+        z-index: -1;
+
     }
 }
